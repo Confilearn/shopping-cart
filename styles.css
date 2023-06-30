@@ -1,0 +1,220 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  margin: 0;
+  font-weight: 400;
+  color: rgb(17, 17, 17);
+  background-color: white;
+}
+
+img {
+  width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: 0.168px;
+}
+
+h2 {
+  font-weight: 500;
+  letter-spacing: 0.168px;
+}
+
+a {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .grid {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* NAVBAR */
+.navbar {
+  padding-bottom: 1rem;
+}
+.nav__image {
+  width: 5.9rem;
+  height: 5.9rem;
+}
+
+/* IMAGES */
+.product__images {
+  margin-bottom: 2.5rem;
+}
+
+.image__cols {
+  display: flex;
+}
+
+.small-img {
+  width: 6rem;
+  height: 6rem;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.large-img {
+  width: 100%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin: 1rem;
+}
+.large-img img {
+  height: 50rem;
+  object-fit: contain;
+}
+
+.small-img img,
+.large-img img {
+  background: rgb(229, 229, 229);
+  opacity: 0.8;
+}
+
+.small-img:hover {
+  border: 1px solid rgb(117, 117, 117);
+  opacity: 1.8;
+}
+
+/* DETAILS */
+.product__title {
+  margin-bottom: 1.5rem;
+}
+
+.product__price {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-weight: bold;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
+.original__price {
+  color: rgb(117, 117, 117);
+  text-decoration: line-through;
+}
+
+.discount__rate {
+  color: rgb(18, 138, 9);
+}
+
+.btn__group {
+  display: flex;
+  flex-direction: column;
+  margin: 2.5rem 0 3.5rem;
+}
+
+.btn {
+  outline: none;
+  border: 0;
+  margin-bottom: 1rem;
+  padding: 1.5rem 3rem;
+  border-radius: 5rem;
+}
+
+.btn--primary {
+  background-color: rgb(17, 17, 17);
+  color: white;
+  font-weight: bold;
+}
+.btn--primary:hover,
+.btn--secondary:hover {
+  background-color: rgb(17, 17, 17);
+  color: white;
+  border: 0;
+  opacity: 0.7;
+}
+
+.btn--secondary {
+  border: 1px solid rgb(17, 17, 17);
+}
+
+.shipping {
+  margin-bottom: 2.5rem;
+}
+
+.pickup {
+  margin-bottom: 2rem;
+}
+
+.shipping__option {
+  margin-bottom: 4rem;
+  color: rgb(117, 117, 117);
+}
+
+.product__text {
+  margin-bottom: 2.5rem;
+}
+
+.product__list {
+  margin-bottom: 2rem;
+}
+
+.product__view {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(117, 117, 117, 0.548);
+}
+
+.collapsible {
+  margin: 2rem 0 3rem;
+}
+
+.collapsible__heading {
+  font-size: 2rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(117, 117, 117, 0.548);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chevron {
+  width: 2rem;
+}
+
+.rotate {
+  transform: rotate(90deg);
+  transition: all 0.3s;
+}
+
+.collapsible__content {
+  padding-top: 2rem;
+  display: none;
+}
+
+.message {
+  margin-top: 1.5rem;
+}
+
+.collapsible--expanded .collapsible__content {
+  display: block;
+}
+
+.collapsible--expanded .rotate {
+  transform: rotate(0);
+}
